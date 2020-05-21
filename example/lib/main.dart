@@ -14,14 +14,15 @@ class MyApp extends StatelessWidget {
         body: SmartGridView(
           tileWidth: 128,
           tileHeight: 168,
-          children: List.generate(80, (index) => Card(
-            child: GridTile(
-              child: Text('tile #$index'),
-            ),
-          )),
+          children: List.generate(
+              80,
+              (index) => Card(
+                    child: GridTile(
+                      child: Text('tile #$index'),
+                    ),
+                  )),
         ),
       ),
     );
   }
 }
-

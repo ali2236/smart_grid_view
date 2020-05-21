@@ -7,10 +7,12 @@ class SmartGridView extends StatelessWidget {
   final List<Widget> children;
   final Axis scrollDirection;
   final bool primary;
-  final ScrollPhysics physics;
+  final bool reverse;
   final bool shrinkWrap;
+  final ScrollPhysics physics;
   final EdgeInsetsGeometry padding;
   final double mainAxisSpacing;
+  final double crossAxisSpacing;
   final bool addAutomaticKeepAlives;
   final bool addRepaintBoundaries;
   final bool addSemanticIndexes;
@@ -23,15 +25,17 @@ class SmartGridView extends StatelessWidget {
     @required this.tileWidth,
     @required this.tileHeight,
     this.children = const <Widget>[],
-    this.scrollDirection,
+    this.scrollDirection = Axis.vertical,
     this.primary,
     this.physics,
-    this.shrinkWrap,
+    this.reverse = false,
+    this.shrinkWrap = false,
     this.padding,
-    this.mainAxisSpacing,
-    this.addAutomaticKeepAlives,
-    this.addRepaintBoundaries,
-    this.addSemanticIndexes,
+    this.mainAxisSpacing = 0.0,
+    this.crossAxisSpacing = 0.0,
+    this.addAutomaticKeepAlives = true,
+    this.addRepaintBoundaries = true,
+    this.addSemanticIndexes = true,
     this.cacheExtent,
     this.semanticChildCount,
     this.dragStartBehavior,
@@ -52,6 +56,7 @@ class SmartGridView extends StatelessWidget {
         shrinkWrap: shrinkWrap,
         padding: padding,
         mainAxisSpacing: mainAxisSpacing,
+        crossAxisSpacing: crossAxisSpacing,
         addAutomaticKeepAlives: addAutomaticKeepAlives,
         addRepaintBoundaries: addRepaintBoundaries,
         addSemanticIndexes: addSemanticIndexes,
