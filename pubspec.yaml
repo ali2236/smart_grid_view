@@ -1,6 +1,6 @@
 name: smart_grid_view
 description: A responsive grid view that changes it's cross axis child count based on the available horizontal size.
-version: 0.2.0
+version: 0.2.1
 homepage: https://github.com/ali2236/smart_grid_view
 
 environment:

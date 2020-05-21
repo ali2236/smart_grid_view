@@ -1,3 +1,7 @@
+## [0.2.1]
+
+* fixed drag start behavior
+
 ## [0.2.0]
 
 * flutter 1.17 bug fixes

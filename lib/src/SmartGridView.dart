@@ -38,7 +38,7 @@ class SmartGridView extends StatelessWidget {
     this.addSemanticIndexes = true,
     this.cacheExtent,
     this.semanticChildCount,
-    this.dragStartBehavior,
+    this.dragStartBehavior = DragStartBehavior.start,
   }) : super(key: key);
 
   @override
